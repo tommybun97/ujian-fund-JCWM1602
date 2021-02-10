@@ -51,9 +51,9 @@ Sebelum mengerjakan ujian, bacalah dengan seksama aturan serta panduan dalam men
     
     ``` C:\data\alee\ujian-fund-JCWM1602> git add . ```
 
-- kemudian lakukan ```commit``` : ```git commit -m "masukan pesan commit"```, e.x. "alee : ujian fundamental JCWM15"
+- kemudian lakukan ```commit``` : ```git commit -m "masukan pesan commit"```, e.x. "ujian fundamental alee"
 
-    ``` C:\data\alee\ujian-fund-JCWM1602> git commit -m "remidial fundamental alee" ```
+    ``` C:\data\alee\ujian-fund-JCWM1602> git commit -m "ujian fundamental alee" ```
 
 - *push branch* tempat anda mengerjakan soal : ``` git push origin nama-branch ```
 
