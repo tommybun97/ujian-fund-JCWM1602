@@ -13,9 +13,10 @@ Sebelum mengerjakan ujian, bacalah dengan seksama aturan serta panduan dalam men
     - 10 menit untuk *setup*
     - 3 jam mengerjakan soal
     - 10 menit *pull request*
+- repositori ini akan di-***public*** 5 menit sebelum ujian dimulai dan akan kembali di-***private*** setelah 5 menit ujian selesai
 - selama mengerjakan ujian, siswa wajib **men-share seluruh screen** di **zoom** (khusus untuk kelas online) sampai ujian selesai
 - dilarang bekerjasama dalam mengerjakan soal ujian
-- dilarang memberikan jawaban atau meminta jawaban dari teman atau pihak lain
+- dilarang memberikan jawaban atau meminta jawaban dari teman atau pihak lain termasuk memberikan *link* repositori hasil ***forked*** selama ujian berlangsung
 - jika ada pertanyaan mengenai ujian dan soal, langsung tanyakan kepada operasional selaku pengawas ujian atau *lecturer* yang mengawasi
 - siswa boleh membuka *website* dan referensi lainnya selama ujian sesuai ketentuan yang berlaku
 - jawaban soal akan dikumpulkan di dalam repositori ini dengan sistem ***pull request*** dan siswa wajib mengirim ***link*** dari ***forked repositoy*** (repositori hasil *fork* di GitHub anda) ke alamat email berikut ini :<br>
