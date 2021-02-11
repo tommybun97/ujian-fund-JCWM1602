@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM USERS</title>
+    <style>
+    #table-users thead{
+        background-color: black;
+        font-size: 16px;
+        color: #f8f1f1;
+    }
+
+    #table-users{
+            width: 75%;
+            border: 1px solid black;
+        }
+    #table-users tr, td{
+            border: 1px solid black;
+        }
+    </style>
+   
+</head>
+<body>
+    <fieldset>
+        <legend>
+            <h1>FORM USERS</h1>
+        </legend>
+        
+        <input type="text" name="username" class="user-input" placeholder="username"> 
+        <input type="text" name="email" class="user-input" placeholder="email">
+        <h5>Role</h5>
+        <input type="text" name="role" class="user-input" placeholder="admin/user">
+        
+        <!-- <input type="list" name="list" id="list-form"> -->
+        <input type="button", value="Add User" id="add-user">
+        <h3 id="error-message"></h3>
+    </fieldset>
+    <fieldset>
+        <h1>USERS DATA</h1>
+        <table id="table-users" >
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- isi dengan data -->
+            </tbody>
+        </table>
+    </fieldset>
+</body>
+<script src="No3_DatabaseExam.js"> </script>
+<script src="No3_Users.js"></script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonanci</title>
+    
+</head>
+<body>
+    <h1>DERET FIBONANCI</h1>
+    <h3>Masukan angka:</h3> <input type="text" name="angka" id="angka-limit" placeholder="Masukan Angka"><br><br>
+    <input type="button", value="SHOW" id="button-show">
+    <input type="button", value="GANJIL" id="button-ganjil">
+    <input type="button", value="GENAP" id="button-genap">
+    <h1>RESULT:</h1>
+    <h3 id="output"></h3>
+
+</body>
+    <script>
+        let buttonshow = document.getElementById("button-show")
+        buttonshow.addEventListener("click", Fibonacci)
+
+        function Fibonacci(){
+            let angkainput = document.getElementById("angka-limit").value
+            let angkainput1 = parseInt(angkainput)
+            let hasil = ""
+            let n1, n2
+            n1 = 0
+            n2 = 1
+
+        for (let i = 1; i <= angkainput1; i++) {
+        // console.log(n1);
+            if(hasil < angkainput1){
+            hasil = n1 + n2;
+            n1 = n2;
+            n2 = hasil;
+            }else if(hasil > angkainput1){
+                break
+            }
+           
+}        let output = document.getElementById("output")
+        output.innerHTML = `${hasil}`
+        return hasil
+    }
+        
+    </script>
+</html>

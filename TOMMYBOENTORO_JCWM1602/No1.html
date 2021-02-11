@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+<body>
+    <h1>PATTERN</h1>
+    <input type="text" nama="Angka" id="input-angka" placeholder="Masukan Angka">
+    <br>
+    <br>
+    <input type="button" value="GANJIL" id="tombol-ganjil">
+    <input type="button" value= " HURUF" id="tombol-huruf">
+    <h1>Result</h1>
+    <h3 id="output"></h3>
+
+</body>
+<script>
+
+    // HURUF GENAP
+    let buttonhuruf = document.getElementById("tombol-huruf")
+    buttonhuruf.addEventListener("click", tampilkanhuruf)
+    function tampilkanhuruf(){
+        let angkainput = document.getElementById("input-angka").value
+        let hasil = ""
+        // ANGKA MAKSIMAL 4 DAN TIDAK BOLEH NEGATIF
+        let lastnumber = 0
+        
+        for(let i=1; i <= angkainput; i++){
+        
+        for(let j=1; j <= i; j++){
+            if(i > 4 && i < 0){
+                alert(`Angka tidak boleh lebih dari 4 dan harus bernilai positif`)
+            }
+            else if(i == 1){
+                hasil += `${i+1}`
+                lastNumber = 2
+            }else {
+                hasil += `${lastNumber + 2} `
+                lastNumber = lastNumber + 2
+            }hasil += '\n'
+        }     
+    }
+        let alphabet = "abcdefghijklmnopqrstuvwxyz"
+        for(x=0; x<=hasil.length; x++)
+            for(y=0; y<alphabet.length; y++){
+                if(hasil[x] == alphabet[y])
+                hasil = alphabet[y]
+            }
+            let output = document.getElementById("output")
+            output.innerHTML = `${hasil}`
+            return hasil
+
+    }
+
+
+    // ANGKA GANJIL
+    let buttonganjil = document.getElementById("tombol-ganjil")
+    buttonganjil.addEventListener("click", tampilkanangka)
+
+
+    
+    function tampilkanangka(){
+        let angkainput = document.getElementById("input-angka").value
+        let hasil = ""
+        let alphabet = "abcdefghijklmnopqrstuvwxyz"
+        // ANGKA MAKSIMAL 4 DAN TIDAK BOLEH NEGATIF
+        let lastnumber = 0
+        for(let i=1; i <= angkainput; i++){
+            if(angkainput < 4 && angkainput > 0 ){
+                for(let j=1; j <= i; j++){
+            if(i == 1){
+                hasil += `${i}`
+                lastNumber = 1
+                }else{
+                    hasil += `${lastNumber + 2} `
+                    lastNumber = lastNumber + 2
+                     }
+                } 
+            }else {
+                alert(`Angka tidak boleh lebih dari 4 dan harus bernilai positif`)
+                break
+            }
+        
+         
+    }
+        let output = document.getElementById("output")
+        output.innerHTML = `${hasil}`
+        return hasil
+    }
+</script>
+</html>
